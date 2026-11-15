@@ -4,6 +4,7 @@ import './App.css'
 function App() {
   const [menuOpen, setMenuOpen] = useState(false)
   const [donateOpen, setDonateOpen] = useState(false)
+  const [donationAmount, setDonationAmount] = useState('1')
   const [email, setEmail] = useState('')
   const [joined, setJoined] = useState(false)
 
@@ -76,7 +77,7 @@ function App() {
 
       <footer id="social"><a className="brand" href="#top"><span className="brand-mark">✳</span><span>The Green Shield<br /><em>Initiative</em></span></a><p>For every tree we plant,<br />a little more future.</p><div className="footer-links"><a href="#social">Instagram</a><a href="#social">LinkedIn</a><a href="#mission">Contact</a></div><span className="copyright">© 2024 GSI</span></footer>
 
-      {donateOpen && <div className="modal-backdrop" role="presentation" onClick={() => setDonateOpen(false)}><div className="donate-modal" role="dialog" aria-modal="true" aria-labelledby="donate-title" onClick={(event) => event.stopPropagation()}><button className="modal-close" onClick={() => setDonateOpen(false)} aria-label="Close donation dialog">×</button><p className="eyebrow"><span /> Your roots start here</p><h2 id="donate-title">Choose your<br /><em>impact.</em></h2><p>Every $10 helps a local partner plant and care for one native tree.</p><div className="donation-options"><button>$10 <small>1 tree</small></button><button>$25 <small>2 trees</small></button><button>$50 <small>5 trees</small></button></div><button className="button button-dark modal-donate" onClick={() => setDonateOpen(false)}>Continue to give <span>↗</span></button></div></div>}
+      {donateOpen && <div className="modal-backdrop" role="presentation" onClick={() => setDonateOpen(false)}><div className="donate-modal" role="dialog" aria-modal="true" aria-labelledby="donate-title" onClick={(event) => event.stopPropagation()}><button className="modal-close" onClick={() => setDonateOpen(false)} aria-label="Close donation dialog">×</button><p className="eyebrow"><span /> Your roots start here</p><h2 id="donate-title">One dollar.<br /><em>One tree.</em></h2><p>Your $1 gift helps a local partner plant and care for one native tree.</p><div className="donate-impact"><div><strong>Atmosphere</strong><span>As it grows, a tree draws carbon dioxide from the air, stores carbon in its wood and soil, and helps cool its surroundings.</span></div><div><strong>Local life</strong><span>Native trees create habitat, hold water in the soil, reduce erosion, and give communities food, shade, and a stronger future.</span></div></div><label className="donation-input-label" htmlFor="donation-amount">How many trees would you like to plant?</label><div className="donation-input-wrap"><span>$</span><input id="donation-amount" type="text" inputMode="numeric" pattern="[0-9]*" aria-describedby="donation-hint" value={donationAmount} onChange={(event) => setDonationAmount(event.target.value.replace(/[^0-9]/g, '').replace(/^0+(?=\d)/, ''))} onBlur={() => setDonationAmount((amount) => amount || '1')} /><span className="per-tree">$1 per tree</span></div><small className="donation-hint" id="donation-hint">Enter a whole number. Your gift plants the same number of trees.</small><button className="button button-dark modal-donate" onClick={() => setDonateOpen(false)}>Continue to give <span>↗</span></button></div></div>}
     </main>
   )
 }
