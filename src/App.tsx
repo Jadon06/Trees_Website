@@ -77,15 +77,17 @@ function App() {
           <p>The overall lesson is hopeful but not simplistic. One trillion trees could make a meaningful contribution to slowing warming and could help move the world toward a safer climate pathway. However, forests cannot absorb emissions indefinitely, and planting trees does not cancel the need to rapidly reduce coal, oil, and gas use. The best outcome comes from combining restoration with clean energy, efficient buildings and transport, lower-emission industry, and strong protection for existing forests.</p>
           <p>There would be social and economic gains as well. Restoration can create local jobs in nurseries, planting, monitoring, fire prevention, and watershed care. When communities help choose locations and species, they can protect food systems and cultural landscapes while building skills that last beyond a single campaign. The outcome depends on durable funding, transparent measurement, and local leadership from the first seedling to the mature forest.</p>
           <p>Our mission would therefore be a long-term act of climate infrastructure: patient work with compounding returns. The first years would be defined by partnerships, land stewardship, and survival. Later decades would bring larger canopies, deeper roots, richer soils, and more dependable cooling and carbon storage. Success would not mean that every climate problem disappears. It would mean that communities have helped create a stronger natural defense, restored living systems, and given future generations more room to adapt and thrive.</p>
+        </div>
+        <div className="expectation-graph">
           <div className="enroads-embed">
             <iframe title="Interactive En-ROADS scenario showing the modeled climate response to this mission" src="https://en-roads.climateinteractive.org/scenario.html?v=26.11.0&p517=11&p520=-62&p50=0.8&p373=11&p63=10.7&p235=1.7&p417=100&p57=-10&g0=2&g1=62" loading="lazy" />
           </div>
           <a className="text-link text-link-dark" href="https://en-roads.climateinteractive.org/scenario.html?v=26.11.0&p517=11&p520=-62&p50=0.8&p373=11&p63=10.7&p235=1.7&p417=100&p57=-10&g0=2&g1=62" target="_blank" rel="noreferrer">Open the En-ROADS scenario <span>↗</span></a>
-        </div>
-        <div className="expectation-aside">
-          <strong>80</strong>
-          <span>years of modeled<br />climate response</span>
-          <div className="expectation-note">Patient work,<br /><em>lasting change.</em></div>
+          <div className="expectation-aside">
+            <strong>80</strong>
+            <span>years of modeled<br />climate response</span>
+            <div className="expectation-note">Patient work,<br /><em>lasting change.</em></div>
+          </div>
         </div>
       </section>
 
