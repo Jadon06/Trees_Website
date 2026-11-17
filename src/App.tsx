@@ -25,6 +25,7 @@ function App() {
         </button>
         <nav className={menuOpen ? 'nav-links is-open' : 'nav-links'}>
           <a href="#mission" onClick={() => setMenuOpen(false)}>Our mission</a>
+          <a href="#expectations" onClick={() => setMenuOpen(false)}>What to expect</a>
           <a href="#work" onClick={() => setMenuOpen(false)}>Our work</a>
           <a href="#stories" onClick={() => setMenuOpen(false)}>Field notes</a>
           <button className="header-cta" type="button" onClick={() => setDonateOpen(true)}>Give a little <span>↗</span></button>
@@ -39,6 +40,7 @@ function App() {
           <div className="hero-actions">
             <button className="button button-dark" type="button" onClick={() => setDonateOpen(true)}>Plant a tree <span>↗</span></button>
             <a className="text-link" href="#mission">See our approach <span>↓</span></a>
+            <a className="text-link" href="#expectations">What to expect <span>↓</span></a>
           </div>
         </div>
         <div className="hero-image-wrap">
@@ -62,8 +64,33 @@ function App() {
         <div className="mission-aside"><strong>1T</strong><span>trees planted<br />by 2046</span><div className="leaf-note">The future is<br /><em>something we grow.</em></div></div>
       </section>
 
+      <section className="expectation-section" id="expectations">
+        <div className="section-label"><span>03</span><span>What to expect</span></div>
+        <div className="expectation-content">
+          <p className="mission-kicker">An En-ROADS scenario</p>
+          <h2>A cooler path<br /><em>is possible.</em></h2>
+          <p>En-ROADS is an interactive climate simulator that shows how policy and technology choices can shape global temperature, energy use, health, the economy, and other outcomes. It was developed by Climate Interactive and MIT Sloan, using system-dynamics modeling grounded in published climate and energy research.</p>
+          <p>It is a trustworthy tool for exploring scenarios rather than a crystal ball or a promise. Its assumptions and relationships are documented, its results are tested against established scientific understanding, and its transparent design lets people inspect trade-offs by changing one solution at a time. En-ROADS has been used by more than 1.6 million people, including educators, advocates, businesses, and policymakers, to build climate understanding and compare possible pathways.</p>
+          <p>If our mission is accomplished, the result would be more than a number of trees planted. The En-ROADS scenario linked below models an ambitious global tree-planting response across the next 80 years, while accounting for the real-world delays between acquiring suitable land, planting seedlings, and seeing mature forests grow. That timeline matters. New trees do not become mature carbon stores overnight, so the strongest benefits arrive progressively rather than all at once.</p>
+          <p>As forests establish, they draw carbon dioxide from the atmosphere through photosynthesis and store carbon in trunks, branches, roots, leaf litter, and soils. The modeled intervention therefore creates a growing climate benefit that strengthens over time. It also brings important local benefits that a temperature graph cannot fully capture: shade, cooler ground, healthier watersheds, reduced erosion, habitat for wildlife, and more resilient landscapes for the people who live and work in them.</p>
+          <p>The scenario is intentionally realistic about constraints. Land acquisition takes time, planting capacity has limits, and survival depends on choosing native species that fit local conditions and caring for them after planting. Some seedlings will fail and need to be replaced. Drought, fire, pests, competing land uses, and changing climate conditions can also reduce the amount of carbon ultimately stored. These factors mean that protecting and maintaining forests is just as important as reaching the planting target.</p>
+          <p>The overall lesson is hopeful but not simplistic. One trillion trees could make a meaningful contribution to slowing warming and could help move the world toward a safer climate pathway. However, forests cannot absorb emissions indefinitely, and planting trees does not cancel the need to rapidly reduce coal, oil, and gas use. The best outcome comes from combining restoration with clean energy, efficient buildings and transport, lower-emission industry, and strong protection for existing forests.</p>
+          <p>There would be social and economic gains as well. Restoration can create local jobs in nurseries, planting, monitoring, fire prevention, and watershed care. When communities help choose locations and species, they can protect food systems and cultural landscapes while building skills that last beyond a single campaign. The outcome depends on durable funding, transparent measurement, and local leadership from the first seedling to the mature forest.</p>
+          <p>Our mission would therefore be a long-term act of climate infrastructure: patient work with compounding returns. The first years would be defined by partnerships, land stewardship, and survival. Later decades would bring larger canopies, deeper roots, richer soils, and more dependable cooling and carbon storage. Success would not mean that every climate problem disappears. It would mean that communities have helped create a stronger natural defense, restored living systems, and given future generations more room to adapt and thrive.</p>
+          <div className="enroads-embed">
+            <iframe title="Interactive En-ROADS scenario showing the modeled climate response to this mission" src="https://en-roads.climateinteractive.org/scenario.html?v=26.11.0&p517=11&p520=-62&p50=0.8&p373=11&p63=10.7&p235=1.7&p417=100&p57=-10&g0=2&g1=62" loading="lazy" />
+          </div>
+          <a className="text-link text-link-dark" href="https://en-roads.climateinteractive.org/scenario.html?v=26.11.0&p517=11&p520=-62&p50=0.8&p373=11&p63=10.7&p235=1.7&p417=100&p57=-10&g0=2&g1=62" target="_blank" rel="noreferrer">Open the En-ROADS scenario <span>↗</span></a>
+        </div>
+        <div className="expectation-aside">
+          <strong>80</strong>
+          <span>years of modeled<br />climate response</span>
+          <div className="expectation-note">Patient work,<br /><em>lasting change.</em></div>
+        </div>
+      </section>
+
       <section className="work-section" id="work">
-        <div className="section-heading"><div className="section-label"><span>03</span><span>Our work</span></div><div className="work-intro"><h2>Rooted in<br /><em>the real world.</em></h2><p>We plan to enlighten and educate 1 million people every year, turning climate knowledge into practical action for healthier forests, communities, and futures.</p><a className="text-link text-link-dark work-social-link" href="#social">Follow the work <span>↗</span></a></div></div>
+        <div className="section-heading">        <div className="section-label"><span>04</span><span>Our work</span></div><div className="work-intro"><h2>Rooted in<br /><em>the real world.</em></h2><p>We plan to enlighten and educate 1 million people every year, turning climate knowledge into practical action for healthier forests, communities, and futures.</p><a className="text-link text-link-dark work-social-link" href="#social">Follow the work <span>↗</span></a></div></div>
         <div className="work-grid">
           <article className="work-card"><div className="card-number">01</div><div className="card-icon">⌁</div><h3>Restore wild places</h3><p>Native trees, planted where they belong, bring watersheds and wildlife back to life.</p><a href="#top" aria-label="Learn about restoring wild places">↗</a></article>
           <article className="work-card work-card-featured"><img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?auto=format&fit=crop&w=900&q=85" alt="Hands holding a young tree seedling" /><div className="featured-copy"><div className="card-number">02</div><h3>Back local leaders</h3><p>We fund the people who know their land best, with tools and trust for the long haul.</p><a href="#stories" aria-label="Read field notes">Read field notes <span>↗</span></a></div></article>
